@@ -1,105 +1,739 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>BloodHunt: Mana Darahmu</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-  </head>
-  <body>
-    <div class="container">
-      <div class="navbar">
-        <div class="logo">
-          BloodHunt
-        </div>
-        <nav>
-          <ul>
-            <li><a href=""> Beranda</a></li>
-            <li><a href=""> FYI</a></li>
-            <li><a href=""> BloodStock </a></li>
-            <li><a href=""> Permohonan </a></li>
-            <li><a href=""> About Us </a></li>
-          </ul>
-        </nav>
-        <div class="profile">
-          Vladimir Trump
-        </div>
-      </div>
-      <!-- <div class="row">
-        <div class="col-2">
-          <img src="1.png" alt="">
-        </div>
-        <div class="col-2">
+<!doctype html>
+<html lang="en">
 
-        </div>
-      </div> -->
-    </div>
+<!-- Head -->
+<head>
+  <!-- Page Meta Tags-->
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="keywords" content="">
 
-    <!-- fitur utama -->
-    <div class="features">
-      <div class="small-container">
-        <div class="row">
-          <div class="col-3">
-            <i class="fas fa-search fa-2x"></i>
-            <h2>Donor darah</h2>
-            <p>Ayo donor darah lur</p>
-          </div>
-          <div class="col-3">
-            <i class="fas fa-hospital fa-2x"></i>
-            <h2>Permintaan darah</h2>
-            <p>Kasihani mereka anjing</p>
-          </div>
-          <div class="col-3">
-            <i class="fas fa-smile fa-2x"></i>
-            <h2>Sebarkan cerita</h2>
-            <p>Cerita omong kosong</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- article -->
-    <div class="small-container">
-      <div class="article">
-        <h2 class="title"> Artikel</h2>
-        <div class="row">
-          <div class="col-3">
-            <img src="2.jpg" alt="">
-            <div class="text">
-              <h4>Wanita ini donor darah kucing</h4>
-              <p>Ayo kita kemana dong seperti taman ini</p>
-            </div>
-            <a href="#" class="btn">More...</a>
-          </div>
-          <div class="col-3">
-            <img src="2.jpg" alt="">
-            <div class="text">
-              <h4>Wanita ini donor darah kucing</h4>
-              <p>Ayo kita kemana dong seperti taman ini</p>
-            </div>
-            <a href="#" class="btn">More...</a>
-          </div>
-          <div class="col-3">
-            <img src="2.jpg" alt="">
-            <div class="text">
-              <h4>Wanita ini donor darah kucing</h4>
-              <p>Ayo kita kemana dong seperti taman ini</p>
-            </div>
-            <a href="#" class="btn">More...</a>
-          </div>
-      </div>
-      </div>
-      </div>
-      <!-- footer -->
-      <div class="footer">
-        <div class="container">
-          <div class="row">
-            <div class="footer-col-1">
-              <ul>
-                <li>Syarat & Ketentuan</li>
-                <li>Hayo apa hayo</li>
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+  <link rel="mask-icon" href="./assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Google Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS -->
+  <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
+
+  <!-- Fix for custom scrollbar if JS is disabled-->
+  <noscript>
+    <style>
+      /**
+          * Reinstate scrolling for non-JS clients
+          */
+      .simplebar-content-wrapper {
+        overflow: auto;
+      }
+    </style>
+  </noscript>
+
+  <!-- Page Title -->
+  <title>Bootstrap 5 HTML Template</title>
+
+</head>
+<body class="">
+
+    <!-- Locomotive Scroll Container-->
+    <div data-scroll-container>
+        <!-- Navbar -->
+        <nav data-scroll-section class="navbar navbar-expand-lg navbar-light bg-transparent mb-5 mb-lg-10">
+          <div class="container-fluid">
+            <!-- <a class="navbar-brand d-flex align-items-center fade-in" href="./index.html" data-scroll>
+              <picture class="avatar me-3" data-scroll data-scroll-speed="10" data-scroll-direction="horizontal" data-scroll-position="top">
+                <img class="img-fluid rounded-circle" src="./assets/images/avatar-small.jpg" alt="HTML Bootstrap Template by Pixel Rocket">
+              </picture>
+              <span class="fw-bolder fs-6 d-flex justify-content-start" data-scroll-section>
+                <span class="fade-in" data-scroll data-scroll-speed="2" data-scroll-delay=".03" data-scroll-position="top">Alfian Hakim's Page</span>
+              </span>
+            </a> -->
+            <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="ri-menu-3-line"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" data-scroll data-scroll-speed="4" data-scroll-delay=".6" data-scroll-position="top">
+              <ul class="navbar-nav ms-0 me-auto mb-2 mb-lg-0 mt-4 mt-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="./index.html">Alfian Hakim's Page</a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link" href="./about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./work-listing.html">Work</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contact.html">Contact</a>
+                </li>
+                <li class="nav-item d-lg-none">
+                  <a class="nav-link btn-toggle-mode" href="#">Toggle Dark/Light Mode</a>
+                </li> -->
               </ul>
             </div>
+            <button class="btn-icon btn-toggle-mode ms-7 fade-in d-none d-lg-flex" data-scroll data-scroll-speed="-10" data-scroll-direction="horizontal" data-scroll-position="top"><i class="ri-sun-line"></i></button>
           </div>
+        </nav>        <!-- / Navbar-->
+
+        <!-- Main Section-->
+        <section class="py-3 ">
+            <!-- Page Content Goes Here -->
+
+            <div class="container" data-scroll-section>
+
+                <!-- Hero-->
+                <div class="mb-lg-10">
+                    <p class="subtitle-sm" data-scroll data-scroll-speed="2" data-scroll-position="top">Hello there!</p>
+                    <h1 class="display-1 mb-4" data-scroll data-scroll-speed="4" data-scroll-position="top">I am Alfian Hakim</h1>
+                    <p data-scroll data-scroll-speed="6" data-scroll-position="top" class="lead typed-elem">Klaten-based aspiring <span class="fw-bold text-highlight" data-typed='{"backSpeed": 50,"strings": ["Data Scientist", "Data Analyst", "Writer", "Designer"]}'></span><span class="d-block">looking for new challenges</span></p>
+                </div>                <!-- /Hero-->
+
+                <!-- About Me -->
+                <div class="row g-8">
+                  
+                  <!-- Profile Image-->
+                  <div class="col-12 col-md-5" data-scroll data-scroll-speed="2" data-scroll-position="top">
+                      <picture>
+                          <img class="img-fluid" src="./assets/images/avatar.png"
+                              alt="HTML Bootstrap Template by Pixel Rocket">
+                      </picture>
+                  </div>
+                  <!-- / Profile Image-->
+  
+                  <!-- / Bio & CV Link-->
+                  <div class="col-12 col-md-7">
+                      <div class="row g-5 g-xl-8">
+                          <div class="col-12 col-xl-7" data-scroll data-scroll-speed="2" data-scroll-position="top">
+                              <p class="lead">A computer science fresh graduate from Brawijaya University, Malang.</p>
+                          
+                              <p>I am highly passionate about the data analytics field and feel very happy in using data to help people understand things better. My experience includes working on several data projects and interning at a bank company.
+                              
+                              <p>Additionally, I enjoy writing articles on data analytics and philosophy, which I publish on my Medium page. Along with my expertise in data analytics, I possess experience in design fields such as graphic design and UI/UX design. I am enthusiastic about the prospect of working with your company or on a project that can help me hone my skills.</p>
+                          </div>
+                          <div class="col-12 col-xl-5" data-scroll data-scroll-speed="2" data-scroll-position="top">
+                              <a href="https://drive.google.com/file/d/1DWxZcHM5ukl3XrKaLDgEMoSKgQQew64N/view?usp=share_link" target="_blank" class="btn btn-dark w-100 d-flex align-items-center justify-content-center"><i class="ri-file-download-line ri-lg me-2"></i> Link to My CV</a>
+                              <h5 class="fw-medium mt-6 mb-3">Find Me Online</h5>
+                              <ul class="list-unstyled">
+                                  <li class="d-flex align-items-center mb-2"><i class="ri-linkedin-line me-3 ri-lg"></i> <a class="link-body" target="_blank" href="https://www.linkedin.com/in/alfian-hakim-826686157/">LinkedIn</a></li>  
+                                  <li class="d-flex align-items-center mb-2"><i class="ri-github-line me-3 ri-lg"></i> <a class="link-body" target="_blank" href="https://github.com/ilmuneraka">GitHub</a></li>
+                                  <li class="d-flex align-items-center mb-2"><i class="ri-medium-line me-3 ri-lg"></i> <a class="link-body" target="_blank" href="https://medium.com/@alf.19x">Medium</a></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- / Bio & CV Link-->
+              </div>
+                <!-- About Me -->
+
+                <!-- Experience-->
+                <div class="py-lg-6">
+                  <h2 
+                      class="display-6 border-bottom pb-5 mb-5 fade-in-up" 
+                      data-scroll data-scroll-position="bottom"
+                  >Experience</h2>                <!-- Single Experience-->
+                              <div 
+                                  class="row gx-2 mb-5 fade-in-up" 
+                                  data-scroll
+                                  data-scroll-position="bottom" 
+                              >
+                                  <div class="col-12 col-lg-4">
+                                      <p class="fw-bolder mb-1">Bank Rakyat Indonesia</p>
+                                      <span class="text-muted small">(Feb 2022 - Jul 2022)</span>
+                                  </div>
+                                  <div class="col-12 col-lg-8">
+                                      <p class="fw-bolder">Data Scientist Intern</p>
+                                      <p class="text-muted fw-light fs-6">
+                                        Intern for Ultra Micro (UMi) Business Division, as part of Magang & Studi Independen Bersertifikat (MSIB) Batch 2 Merdeka Belajar Kampus Merdeka (MBKM)<br>
+                                        • Responsible for helping meet data needs in the UMi division (collecting data, recapitulating data, creating daily data sending bots, helping to design dashboards, conducting Exploratory Data Analysis of 11 million PNM customers to identify customer behavior).<br>
+                                        • Responsible for modeling clustering of Mitra UMi with the K-Prototype algorithm to find out which potential Mitra UMi are.<br>
+                                        • Responsible for assisting other Data Scientist colleague in building a rule-based Early Warning System (EWS) model and anomaly detection.<br>
+                                        
+                                      </p>
+                                      <p><span class="fw-bolder">Tools Used:</span><br>
+                                        Python, R, PySpark, SQL, Cloudera (DSW, HUE), Microsoft Excel, Google Spreadsheets, Google Data Studio</p>
+                                  </div>
+                              </div>
+                              <!-- / Single Experience -->
+                              <!-- Single Experience-->
+                              <div 
+                                  class="row gx-2 mb-5 fade-in-up" 
+                                  data-scroll
+                                  data-scroll-position="bottom" 
+                              >
+                                  <div class="col-12 col-lg-4">
+                                      <p class="fw-bolder mb-1">Faculty of Computer Science (FILKOM) University of Brawijaya</p>
+                                      <span class="text-muted small">(Sep 2021 - Des 2021)</span>
+                                  </div>
+                                  <div class="col-12 col-lg-8">
+                                      <p class="fw-bolder">Lab. Assistant for Information Systems Analysis & Design Course</p>
+                                      <p class="text-muted fw-light fs-6">• Fully responsible for assisting students in 2 classes to complete 4 Modules of IS Analysis and Design.<br>
+                                        • Responsible for providing guidance on the revision of the Analysis Module (Requirement Engineering) and Design Module (Structured Approach and Object-Oriented Approach).</p>
+                                  </div>
+                              </div>
+                              <!-- / Single Experience -->
+              </div>                <!-- / Experience-->  
+
+                <!-- Latest Projects Slideshow Top-->
+                <div>
+                    <h2 
+                        class="display-6 border-bottom pb-5 mb-5 fade-in-up" 
+                        data-scroll data-scroll-position="bottom"
+                    >Project</h2>                    <div class="position-relative">
+                        <div class="swiper-container swiper-linked-top">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide cursor-pointer">
+                              <picture>
+                                  <img class="img-fluid" src="./assets/images/project-listing-0.jpg" alt="">
+                              </picture>
+                          </div>
+                                    <div class="swiper-slide cursor-pointer">
+                                        <picture>
+                                            <img class="img-fluid" src="./assets/images/project-listing-1.jpg" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="swiper-slide cursor-pointer">
+                                        <picture>
+                                            <img class="img-fluid" src="./assets/images/project-listing-2.jpg" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="swiper-slide cursor-pointer">
+                                        <picture>
+                                            <img class="img-fluid" src="./assets/images/project-listing-3.jpg" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="swiper-slide cursor-pointer">
+                                        <picture>
+                                            <img class="img-fluid" src="./assets/images/project-listing-4.jpg" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="swiper-slide cursor-pointer">
+                                        <picture>
+                                            <img class="img-fluid" src="./assets/images/project-listing-5.jpg" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="swiper-slide cursor-pointer">
+                                        <picture>
+                                            <img class="img-fluid" src="./assets/images/project-listing-6.jpg" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="swiper-slide cursor-pointer">
+                                        <picture>
+                                            <img class="img-fluid" src="./assets/images/project-listing-7.jpg" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="swiper-slide cursor-pointer">
+                                        <picture>
+                                            <img class="img-fluid" src="./assets/images/project-listing-8.jpg" alt="">
+                                        </picture>
+                                    </div>
+                          </div>
+                        </div>
+                        <div class="swiper-prev swiper-btn"><i class="ri-arrow-left-line"></i></div>
+                        <div class="swiper-next swiper-btn"><i class="ri-arrow-right-line"></i></div>                    </div>
+                </div>
+                <!-- / Latest Projects Slideshow Top-->
+
+                <!-- Latest Projects Slideshow Bottom-->
+                <div class="mt-3 mb-5">
+                    <div class="swiper-container swiper-linked-bottom">
+                      
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="row gx-4 align-items-center">
+            
+                            <!-- Slide Image-->
+                            <div class="col-12 col-md-6" data-swiper-parallax-x="-100">
+                              <picture>
+                                <img class="img-fluid" src="./assets/images/project-listing-0.jpg" alt="">
+                            </picture>
+                            </div>
+                            <!-- / Slide Image -->
+            
+                            <!-- Slide Text-->
+                            <div class="col-12 col-md-6">
+                              <p class="subtitle-xs mb-0 mt-4 mt-md-0" data-swiper-parallax-x="-100"><span class='me-2'>Course Project</span> &middot; <span class='ms-2'>Dashboard</span></p>
+                              <p class="fw-bolder lead mb-3 mt-2" data-swiper-parallax-x="-150">Sales Dashboard</p>
+                              <p class="small text-muted mb-2" data-swiper-parallax-x="-200">
+                                Built a dashboard to monitor monthly sales of a pharmacy company. This project is done as a final task
+                                for Rakamin Academy Virtual Internship Experience (VIX) Program: Big Data Analytics at Kimia Farma.
+                              </p>
+                              <div class="mt-3" data-swiper-parallax-y="-15">
+                                <a class="link-body" target="_blank" href="https://lookerstudio.google.com/reporting/52b55ee0-e5d8-4fc3-8db7-8616d66baedd">Dashboard</a>
+                              </div>
+                            </div>
+                            <!-- / Slide Text-->
+                          </div>
+                        </div>
+                                <div class="swiper-slide">
+                                  <div class="row gx-4 align-items-center">
+                    
+                                    <!-- Slide Image-->
+                                    <div class="col-12 col-md-6" data-swiper-parallax-x="-100">
+                                      <picture>
+                                        <img class="img-fluid" src="./assets/images/project-listing-1.jpg" alt="">
+                                    </picture>
+                                    </div>
+                                    <!-- / Slide Image -->
+                    
+                                    <!-- Slide Text-->
+                                    <div class="col-12 col-md-6">
+                                      <p class="subtitle-xs mb-0 mt-4 mt-md-0" data-swiper-parallax-x="-100"><span class='me-2'>Personal Project</span> &middot; <span class='ms-2'>Football Analytics</span></p>
+                                      <p class="fw-bolder lead mb-3 mt-2" data-swiper-parallax-x="-150">Building xG and xGOT Model with StatsBomb World Cup 2022 Data</p>
+                                      <p class="small text-muted mb-2" data-swiper-parallax-x="-200">Exploring StatsBomb open data by building simple xG and xGOT model with Logistic Regression.
+                                        I already wrote an article on how to build simple xG model, and will also write the xGOT one soon.
+                                      </p>
+                                      <div class="mt-3" data-swiper-parallax-y="-15">
+                                        <a class="link-body" target="_blank" href="https://github.com/ilmuneraka/xg-xgot-statsbomb-worldcup2022">GitHub</a>
+                                        <a class="link-body" href="https://medium.com/@alf.19x/how-to-build-your-own-expected-goals-xg-model-2bd186dccdf7">xG Article</a>
+                                      </div>
+                                    </div>
+                                    <!-- / Slide Text-->
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="row gx-4 align-items-center">
+                    
+                                    <!-- Slide Image-->
+                                    <div class="col-12 col-md-6" data-swiper-parallax-x="-100">
+                                      <picture>
+                                        <img class="img-fluid" src="./assets/images/project-listing-2.jpg" alt="">
+                                    </picture>
+                                    </div>
+                                    <!-- / Slide Image -->
+                    
+                                    <!-- Slide Text-->
+                                    <div class="col-12 col-md-6">
+                                      <p class="subtitle-xs mb-0 mt-4 mt-md-0" data-swiper-parallax-x="-100"><span class='me-2'>Personal Project</span> &middot; <span class='ms-2'>Streamlit App</span></p>
+                                      <p class="fw-bolder lead mb-3 mt-2" data-swiper-parallax-x="-150">Letterboxd Profile Analyzer, Friends Ranker, and Movie Recommender</p>
+                                      <p class="small text-muted mb-2" data-swiper-parallax-x="-200">Letterboxd is a social media for movie lovers which they can share their movie-watching activities.
+                                        This app scrapes data from Letterboxd to make visualizations and descriptive analysis based on that data. Users only need to input their username. This app has been used by more than 300 users.
+                                      </p>
+                                      <div class="mt-3" data-swiper-parallax-y="-15">
+                                        <a class="link-body" target="_blank" href="https://letterboxd-friends-ranker.streamlit.app">The App</a>
+                                        <a class="link-body" target="_blank" href="https://github.com/ilmuneraka/letterboxd-friends-ranker">GitHub</a>
+                                        <a class="link-body" target="_blank" href="https://medium.com/@alf.19x/letterboxd-friends-ranker-simple-movie-recommendation-system-80a38dcfb0da">Friends Ranker Article</a>
+                                        <a class="link-body" target="_blank" href="https://medium.com/@alf.19x/letterboxd-profile-analysis-identifying-our-movie-watching-behaviour-281f913a7073">Profile Analyzer Article</a>
+                                      </div>
+                                    </div>
+                                    <!-- / Slide Text-->
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="row gx-4 align-items-center">
+                    
+                                    <!-- Slide Image-->
+                                    <div class="col-12 col-md-6" data-swiper-parallax-x="-100">
+                                      <picture>
+                                        <img class="img-fluid" src="./assets/images/project-listing-3.jpg" alt="">
+                                    </picture>
+                                    </div>
+                                    <!-- / Slide Image -->
+                    
+                                    <!-- Slide Text-->
+                                    <div class="col-12 col-md-6">
+                                      <p class="subtitle-xs mb-0 mt-4 mt-md-0" data-swiper-parallax-x="-100"><span class='me-2'>College Thesis</span> &middot; <span class='ms-2'>Data Science</span></p>
+                                      <p class="fw-bolder lead mb-3 mt-2" data-swiper-parallax-x="-150">Predicting MBTI Types of K-Pop Idols Based on Their Instagram Captions
+                                        Using Word2Vec and LSTM
+                                      </p>
+                                      <p class="small text-muted mb-2" data-swiper-parallax-x="-200">
+                                        Developed deep learning models to classify MBTI types of K-Pop Idols, there's 4 models that are based on MBTI categories
+                                        (I-E, N-S, F-T, J-P). Scraped the Instagram captions of 458 idols with total captions of 140.000+.
+                                        The model performed better in predicting MBTI based on set of captions (each model has 0.88-0.90 macro f1-score, and 0.65 in combination of models) rather than predicting
+                                        MBTI based on only one caption (each model has 0.55-0.58 macro f1-score, and 0.12 in combination of models). Deployed the models to Streamlit so that K-Pop fans can use it
+                                        to predict their idols.
+                                      </p>
+                                      <div class="mt-3" data-swiper-parallax-y="-15">
+                                        <a class="link-body" target="_blank" href="https://predict-kpop-mbti.streamlit.app/">The App</a>
+                                        <a class="link-body" target="_blank" href="https://drive.google.com/drive/folders/1arfg-UK2THOVxu5CT4VWpVBVvS4CN84r?usp=share_link">Documents</a>
+                                      </div>
+                                    </div>
+                                    <!-- / Slide Text-->
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="row gx-4 align-items-center">
+                    
+                                    <!-- Slide Image-->
+                                    <div class="col-12 col-md-6" data-swiper-parallax-x="-100">
+                                      <picture>
+                                        <img class="img-fluid" src="./assets/images/project-listing-4.jpg" alt="">
+                                    </picture>
+                                    </div>
+                                    <!-- / Slide Image -->
+                    
+                                    <!-- Slide Text-->
+                                    <div class="col-12 col-md-6">
+                                      <p class="subtitle-xs mb-0 mt-4 mt-md-0" data-swiper-parallax-x="-100"><span class='me-2'>College Project</span> &middot; <span class='ms-2'>UI/UX Design</span></p>
+                                      <p class="fw-bolder lead mb-3 mt-2" data-swiper-parallax-x="-150">PUFACURE (Public Facility Quick Report)</p>
+                                      <p class="small text-muted mb-2" data-swiper-parallax-x="-200">
+                                        PUFACURE is a reporting app for damages on public facility, a solution designed to improve public facility quality with the help of users. The main feature of this app is to report a damage on a public facility,
+                                        with picture and post it publicly so other users can upvote it, hoping that government can immediately repair it. My role for this project is UI/UX Designer.
+                                      </p>
+                                      <div class="mt-3" data-swiper-parallax-y="-15">
+                                        <a class="link-body" target="_blank" href="https://www.figma.com/proto/mT1XrD4kr80E4okGyo5uIv/PUFACURE?node-id=101%3A4&scaling=scale-down&page-id=0%3A1&s">Prototype</a>
+                                      </div>
+                                    </div>
+                                    <!-- / Slide Text-->
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="row gx-4 align-items-center">
+                    
+                                    <!-- Slide Image-->
+                                    <div class="col-12 col-md-6" data-swiper-parallax-x="-100">
+                                      <picture>
+                                        <img class="img-fluid" src="./assets/images/project-listing-5.jpg" alt="">
+                                    </picture>
+                                    </div>
+                                    <!-- / Slide Image -->
+                    
+                                    <!-- Slide Text-->
+                                    <div class="col-12 col-md-6">
+                                      <p class="subtitle-xs mb-0 mt-4 mt-md-0" data-swiper-parallax-x="-100"><span class='me-2'>College Project</span> &middot; <span class='ms-2'>Data Science</span></p>
+                                      <p class="fw-bolder lead mb-3 mt-2" data-swiper-parallax-x="-150">Predicting Data Scientist Career Switch with Decision Tree Classifier</p>
+                                      <p class="small text-muted mb-2" data-swiper-parallax-x="-200">Implementing decision tree classifier to predict whether a data scientist switch his job or not in
+                                        the future based on a Kaggle dataset. Exploring the dataset first, selecting the relevant features based on the feature correlation to the target, hyperparameter
+                                        tuning the model and evaluate it with K-Fold cross validation, yielding an average accuracy of 86,9%.</p>
+                                      <div class="mt-3" data-swiper-parallax-y="-15">
+                                        <a class="link-body" target="_blank" href="https://drive.google.com/file/d/1MSXWKNGUxVD3IMpPEym_osreQSh6Nj69/view">Article Draft</a>
+                                        <a class="link-body" target="_blank" href="https://github.com/ilmuneraka/decision-tree-data-scientist">GitHub</a>
+                                      </div>
+                                    </div>
+                                    <!-- / Slide Text-->
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="row gx-4 align-items-center">
+                    
+                                    <!-- Slide Image-->
+                                    <div class="col-12 col-md-6" data-swiper-parallax-x="-100">
+                                      <picture>
+                                        <img class="img-fluid" src="./assets/images/project-listing-6.jpg" alt="">
+                                    </picture>
+                                    </div>
+                                    <!-- / Slide Image -->
+                    
+                                    <!-- Slide Text-->
+                                    <div class="col-12 col-md-6">
+                                      <p class="subtitle-xs mb-0 mt-4 mt-md-0" data-swiper-parallax-x="-100"><span class='me-2'>College Project</span> &middot; <span class='ms-2'>Data Science</span></p>
+                                      <p class="fw-bolder lead mb-3 mt-2" data-swiper-parallax-x="-150">Sentiment Analysis of PeduliLindungi with Google Play Store Reviews with Naive Bayes Classifier</p>
+                                      <p class="small text-muted mb-2" data-swiper-parallax-x="-200">Building a machine learning model to classify reviews into negative or positive class using Naive Bayes
+                                        algorithm. The data is gathered manually from Google Play Store, consists of 100 positive reviews and 100 negative reviews. The accuracy yielded is around 86% with
+                                        a train test split ration of 75:25.</p>
+                                      <div class="mt-3" data-swiper-parallax-y="-15">
+                                        <a class="link-body" target="_blank" href="https://drive.google.com/file/d/19FtlCVy3fGEob7EJ_DVqSY5enEHIVbru/view">Report</a>
+                                        <a class="link-body" target="_blank" href="https://youtu.be/Ngc-vBtM-5E">Demo Video</a>
+                                        <a class="link-body" target="_blank" href="https://github.com/ilmuneraka/sentiment-analysis-pedulilindungi">GitHub</a>
+                                      </div>
+                                    </div>
+                                    <!-- / Slide Text-->
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="row gx-4 align-items-center">
+                    
+                                    <!-- Slide Image-->
+                                    <div class="col-12 col-md-6" data-swiper-parallax-x="-100">
+                                      <picture>
+                                        <img class="img-fluid" src="./assets/images/project-listing-7.jpg" alt="">
+                                    </picture>
+                                    </div>
+                                    <!-- / Slide Image -->
+                    
+                                    <!-- Slide Text-->
+                                    <div class="col-12 col-md-6">
+                                      <p class="subtitle-xs mb-0 mt-4 mt-md-0" data-swiper-parallax-x="-100"><span class='me-2'>College Project</span> &middot; <span class='ms-2'>Data Science</span></p>
+                                      <p class="fw-bolder lead mb-3 mt-2" data-swiper-parallax-x="-150">EDA & K-Means Clustering of Disasters Affected Areas in 6 Provinces in Java</p>
+                                      <p class="small text-muted mb-2" data-swiper-parallax-x="-200">
+                                        Exploring disasters happened in 6 Provinces in Java in span of 2000-2019 based on DesInventar data, looking from year to year, month to month, and which
+                                        type of disaster happened most. Clustering the cities and provinces to see which area is affected most. The result shows that D. I. Yogyakarta is the most
+                                        disasters affected province, related to the 2006 earthquake that suffered heavy casualties.
+                                      </p>
+                                      <div class="mt-3" data-swiper-parallax-y="-15">
+                                        <a class="link-body" target="_blank" href="https://drive.google.com/file/d/1uDWk5R6CdYxsfMLvld3kzGebgIOC1zXr/view">Article Draft</a>
+                                        <a class="link-body" target="_blank" href="https://github.com/ilmuneraka/eda-clustering-bencana-pulau-jawa">GitHub</a>
+                                      </div>
+                                    </div>
+                                    <!-- / Slide Text-->
+                                  </div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="row gx-4 align-items-center">
+                    
+                                    <!-- Slide Image-->
+                                    <div class="col-12 col-md-6" data-swiper-parallax-x="-100">
+                                      <picture>
+                                        <img class="img-fluid" src="./assets/images/project-listing-8.jpg" alt="">
+                                    </picture>
+                                    </div>
+                                    <!-- / Slide Image -->
+                    
+                                    <!-- Slide Text-->
+                                    <div class="col-12 col-md-6">
+                                      <p class="subtitle-xs mb-0 mt-4 mt-md-0" data-swiper-parallax-x="-100"><span class='me-2'>College Project</span> &middot; <span class='ms-2'>UX Design</span></p>
+                                      <p class="fw-bolder lead mb-3 mt-2" data-swiper-parallax-x="-150">Eling 2.0 (Redesigning the UX of Eling LMS)</p>
+                                      <p class="small text-muted mb-2" data-swiper-parallax-x="-200">Eling is a Moodle-based learning management system (LMS) used in Faculty of Computer Science,
+                                        Brawijaya University. We were redesigning Eling with Design Thinking approach, starting from (1) Empathize by doing interviews and spreading questionnaires
+                                        to understand how user's perception, (2) Define by modeling the perceptions into empathy map and defining user personas, (3) Ideate by defining ideas, requirements,
+                                        information architecture, and etc., (4) Prototype by designing lo-fi and hi-fi, and building protoype, lastly (5) Test by testing the proposed prototype to users with
+                                        UEQ framework.</p>
+                                      <div class="mt-3" data-swiper-parallax-y="-15">
+                                        <a class="link-body" target="_blank" href="http://ubproject.net/class/puxd-2021-kelompok-7-eling-2-0/">Publication</a>
+                                        <a class="link-body" target="_blank" href="http://bit.ly/PUXD21-Kelompok_07-Prototype%20">Prototype</a>
+                                      </div>
+                                    </div>
+                                    <!-- / Slide Text-->
+                                  </div>
+                                </div>
+                      </div>
+                    </div>                </div>
+                <!-- / Latest Projects Slideshow Bottom-->
+
+                              
+
+            </div>
+
+            <!-- Testimonials-->
+            <!-- Testimonials -->
+            <!-- <div class="mt-8">
+              <div class="d-flex mb-4" data-scroll-section>
+                <div class="testimonials" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-8" data-scroll-offset="0">
+                      <div class="card card-testimonial">
+                          <div class="card-body">
+                            <p class="mb-1">
+                                "Jenny offered creative logos without production deadlines too complicated or tight spots where others could not go. Not only does her work make us look good but also feels really nice working alongside someone you can trust!"
+                            </p>
+                            <div class="d-flex align-items-center mt-4">
+                                <picture class="avatar me-3">
+                                    <img class="img-fluid rounded-circle" src="./assets/images/avatar-1.jpeg" alt="">
+                                </picture>
+                                <div>
+                                    <p class="small fw-bolder mb-2 lh-1">Emily Parkson</p>
+                                    <p class="small text-muted m-0 lh-1">Waterpark Theatre</p>
+                                </div>
+                            </div>
+                          </div>
+                      </div>          <div class="card card-testimonial">
+                          <div class="card-body">
+                            <p class="mb-1">
+                                "I had the best experience working with Jenny. She is a creative, talented and fun person to be around! Her attention-to detail made it easy for me as her client because we knew what was wanted from day one."
+                            </p>
+                            <div class="d-flex align-items-center mt-4">
+                                <picture class="avatar me-3">
+                                    <img class="img-fluid rounded-circle" src="./assets/images/avatar-7.jpeg" alt="">
+                                </picture>
+                                <div>
+                                    <p class="small fw-bolder mb-2 lh-1">Patrick Smith</p>
+                                    <p class="small text-muted m-0 lh-1">Cologne Limited</p>
+                                </div>
+                            </div>
+                          </div>
+                      </div>          <div class="card card-testimonial">
+                          <div class="card-body">
+                            <p class="mb-1">
+                                "I was really pleased with the logo designs that Jenny created for my organization. The logos are instantly recognizable, making it easy to find our brand in a crowded market of other education providers."
+                            </p>
+                            <div class="d-flex align-items-center mt-4">
+                                <picture class="avatar me-3">
+                                    <img class="img-fluid rounded-circle" src="./assets/images/avatar-6.jpeg" alt="">
+                                </picture>
+                                <div>
+                                    <p class="small fw-bolder mb-2 lh-1">Harry Duckmore</p>
+                                    <p class="small text-muted m-0 lh-1">SB Design Limited</p>
+                                </div>
+                            </div>
+                          </div>
+                      </div>          <div class="card card-testimonial">
+                          <div class="card-body">
+                            <p class="mb-1">
+                                "She&#x27;s always professional and clear in her communications, but it was when she started giving me advice on how to improve our website design that really made a difference for us--she had so many good ideas!"
+                            </p>
+                            <div class="d-flex align-items-center mt-4">
+                                <picture class="avatar me-3">
+                                    <img class="img-fluid rounded-circle" src="./assets/images/avatar-4.jpeg" alt="">
+                                </picture>
+                                <div>
+                                    <p class="small fw-bolder mb-2 lh-1">Nelly Oliver</p>
+                                    <p class="small text-muted m-0 lh-1">Super 8 Design House</p>
+                                </div>
+                            </div>
+                          </div>
+                      </div>          <div class="card card-testimonial">
+                          <div class="card-body">
+                            <p class="mb-1">
+                                "I was really pleased with the logo designs that Jenny created for my organization. The logos are instantly recognizable, making it easy to find our brand in a crowded market of other education providers."
+                            </p>
+                            <div class="d-flex align-items-center mt-4">
+                                <picture class="avatar me-3">
+                                    <img class="img-fluid rounded-circle" src="./assets/images/avatar-1.jpeg" alt="">
+                                </picture>
+                                <div>
+                                    <p class="small fw-bolder mb-2 lh-1">Sarah Fell</p>
+                                    <p class="small text-muted m-0 lh-1">SFell Limited</p>
+                                </div>
+                            </div>
+                          </div>
+                      </div>          <div class="card card-testimonial">
+                          <div class="card-body">
+                            <p class="mb-1">
+                                "She&#x27;s always professional and clear in her communications, but it was when she started giving me advice on how to improve our website design that really made a difference for us--she had so many good ideas!"
+                            </p>
+                            <div class="d-flex align-items-center mt-4">
+                                <picture class="avatar me-3">
+                                    <img class="img-fluid rounded-circle" src="./assets/images/avatar-2.jpeg" alt="">
+                                </picture>
+                                <div>
+                                    <p class="small fw-bolder mb-2 lh-1">Henry Kingsom</p>
+                                    <p class="small text-muted m-0 lh-1">Henry Codes Ltd</p>
+                                </div>
+                            </div>
+                          </div>
+                      </div>    </div>
+              </div>
+              <div class="d-flex justify-content-end" data-scroll-section>
+                <div class="testimonials" data-scroll data-scroll-direction="horizontal" data-scroll-speed="8" data-scroll-offset="0">
+                      <div class="card card-testimonial">
+                          <div class="card-body">
+                            <p class="mb-1">
+                                "Working with Jenny was an absolute dream. She offered us the perfect logo without any complicated deadlines or tight spots that other designers could not navigate to save their life!"
+                            </p>
+                            <div class="d-flex align-items-center mt-4">
+                                <picture class="avatar me-3">
+                                    <img class="img-fluid rounded-circle" src="./assets/images/avatar-5.jpeg" alt="">
+                                </picture>
+                                <div>
+                                    <p class="small fw-bolder mb-2 lh-1">Peter Jackson</p>
+                                    <p class="small text-muted m-0 lh-1">WimWam Limited</p>
+                                </div>
+                            </div>
+                          </div>
+                      </div>          <div class="card card-testimonial">
+                          <div class="card-body">
+                            <p class="mb-1">
+                                "I had the best experience working with Jenny. She is a creative, talented and fun person to be around! Her attention-to detail made it easy for me as her client because we knew what was wanted from day one."
+                            </p>
+                            <div class="d-flex align-items-center mt-4">
+                                <picture class="avatar me-3">
+                                    <img class="img-fluid rounded-circle" src="./assets/images/avatar-6.jpeg" alt="">
+                                </picture>
+                                <div>
+                                    <p class="small fw-bolder mb-2 lh-1">Patricia Nelson</p>
+                                    <p class="small text-muted m-0 lh-1">Cologne Limited</p>
+                                </div>
+                            </div>
+                          </div>
+                      </div>          <div class="card card-testimonial">
+                          <div class="card-body">
+                            <p class="mb-1">
+                                "Working with Jenny was a real pleasure. Not only does her work make us look good but also feels really nice working alongside someone you can trust both personally and professionally!"
+                            </p>
+                            <div class="d-flex align-items-center mt-4">
+                                <picture class="avatar me-3">
+                                    <img class="img-fluid rounded-circle" src="./assets/images/avatar-7.jpeg" alt="">
+                                </picture>
+                                <div>
+                                    <p class="small fw-bolder mb-2 lh-1">Stephen King</p>
+                                    <p class="small text-muted m-0 lh-1">King Coding Ltd</p>
+                                </div>
+                            </div>
+                          </div>
+                      </div>          <div class="card card-testimonial">
+                          <div class="card-body">
+                            <p class="mb-1">
+                                "With a creative approach to logos, she was able provide us with custom designs without ever having an unrealistic deadline. Not only does the work make our company look good but also feel really nice when we can trust someone!"
+                            </p>
+                            <div class="d-flex align-items-center mt-4">
+                                <picture class="avatar me-3">
+                                    <img class="img-fluid rounded-circle" src="./assets/images/avatar-3.jpeg" alt="">
+                                </picture>
+                                <div>
+                                    <p class="small fw-bolder mb-2 lh-1">Simon Smith</p>
+                                    <p class="small text-muted m-0 lh-1">Brand Juice Co</p>
+                                </div>
+                            </div>
+                          </div>
+                      </div>          <div class="card card-testimonial">
+                          <div class="card-body">
+                            <p class="mb-1">
+                                "I&#x27;ve never met anyone who is more professional and clear in their communications than Jenny, but it was when she started giving me advice on how to improve our website design that really made a difference for us -- she had so many good ideas!"
+                            </p>
+                            <div class="d-flex align-items-center mt-4">
+                                <picture class="avatar me-3">
+                                    <img class="img-fluid rounded-circle" src="./assets/images/avatar-1.jpeg" alt="">
+                                </picture>
+                                <div>
+                                    <p class="small fw-bolder mb-2 lh-1">Joe Hill</p>
+                                    <p class="small text-muted m-0 lh-1">Joe Hill Software</p>
+                                </div>
+                            </div>
+                          </div>
+                      </div>          <div class="card card-testimonial">
+                          <div class="card-body">
+                            <p class="mb-1">
+                                "I can&#x27;t say enough good things about Jenny! We started as a client last year after she made some major changes for us which turned out beautifully. We&#x27;ll be a client for as long as she will work with us!"
+                            </p>
+                            <div class="d-flex align-items-center mt-4">
+                                <picture class="avatar me-3">
+                                    <img class="img-fluid rounded-circle" src="./assets/images/avatar-2.jpeg" alt="">
+                                </picture>
+                                <div>
+                                    <p class="small fw-bolder mb-2 lh-1">Rob Waite</p>
+                                    <p class="small text-muted m-0 lh-1">RW Software Services</p>
+                                </div>
+                            </div>
+                          </div>
+                      </div>    </div>
+              </div>
+            </div> -->
+            <!-- / Testimonials-->            <!-- / Testimonials-->
+
+            <!-- /Page Content -->
+        </section>
+        <!-- / Main Section-->
+
+        <!-- Footer -->
+        <!-- Footer-->
+        <div class="d-flex align-items-center justify-content-center flex-column col-lg-7 col-xl-6 col-xxl-5 text-center mx-auto mt-5 px-4 px-md-0 mt-lg-10" data-scroll-section>
+            <h4 class="display-5 mb-5" data-scroll data-scroll-speed=".8" data-scroll-delay="0.05">Interested to hire me or work with me?</h4>
+            <a href="mailto:alf.19x@gmail.com" class="btn btn-primary">Email Me</a>
+            
         </div>
-  </body>
+        
+        <footer class="border-top mt-10 pt-5 pb-8  " data-scroll-section>
+        <div class="container d-flex justify-content-between">
+            <p class="small">All rights reserved. © Alfian Hakim 2023. Template created by <a class="link-body" href="https://www.pixelrocket.store">Pixel Rocket</a></p>
+            <ul class="list-unstyled d-flex align-items-center">
+                <li class="ms-3"><a class="text-decoration-none text-muted" href="#"><i class="ri-github-fill"></i></a></li>
+                <li class="ms-3"><a class="text-decoration-none text-muted" href="#"><i class="ri-facebook-fill"></i></a></li>
+                <li class="ms-3"><a class="text-decoration-none text-muted" href="#"><i class="ri-twitter-fill"></i></a></li>
+            </ul>
+        </div>
+        </footer>
+        <!-- / Footer-->
+        <!-- / Footer-->
+    </div>
+    <!-- Locomotive Scroll Container-->
+
+
+    <!-- Theme JS -->
+    <!-- Vendor JS -->
+    <script src="./assets/js/vendor.bundle.js"></script>
+    
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.bundle.js"></script>
+</body>
+
 </html>
